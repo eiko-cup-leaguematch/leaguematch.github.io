@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/allpage.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eiko-cup LEAGUE MATCHI 公式サイト</title>
+    <!-- favicon -->
+    <link rel="icon" href="../img/favicon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+    <!-- /favicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="manifest" href="../JSON/manifest.json">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'pah8xsd',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+  
+</head>
+<body>
+    
+  <header id="header">
+    <div>
+        <img src="../img/rogo_eikocup_2.PNG" alt="Eiko-cupロゴ" class="rogo">
+    </div>
+    
+    
+  </header> 
+  <div id="container">
+    <main>
+        <div class="nav">
+            <nav>
+                <ul id="header_list">
+                    <li><a href="./index.html">TOP</a></li>                
+                    <li><a href="./pennant_1.html" class="nitteikekka">日程・結果</a></li>
+                    <li><a href="./ranking.html">順位</a></li>
+                    <li><a href="./form.html">結果申請</a></li> 
+                </ul>
+                <!-- <div class="tggle-btn-box"> -->
+                    <div class="tggle-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                <!-- </div> -->
+            </nav>
+            <nav class="hamburger-menu">
+                <img src="../img/rogo_eikocup_2.PNG" alt="rogo">
+                <ul class="hamburger-menu-list">
+                    <li class="ham_menu_list"><a href="/html/index.html">TOP</a></li>
+                    <li class="link_null"><a href="#" class="link_null">日程・結果</a></li>
+                        <li class="nitei-cildren ham_menu_list"><a href="/html/pennant_1.html">開幕節</a></li>
+                        <li class="nitei-cildren ham_menu_list"><a href="/html/pennant_2.html">第二節</a></li>
+                        <li class="nitei-cildren ham_menu_list"><a href="/html/pennant_3.html">第三節</a></li>
+                        <li class="nitei-cildren ham_menu_list"><a href="/html/pennant_4.html">第四節</a></li>
+                        <li class="nitei-cildren ham_menu_list"><a href="/html/pennant_5.html">第五節</a></li>
+                        <li class="nitei-cildren ham_menu_list"><a href="/html/cs.html">クライマックスラウンド</a></li>
+                        <li class="nitei-cildren ham_menu_list"><a href="/html/fs.html">ファイナルラウンド</a></li>
+                    <li class="ham_menu_list"><a href="/html/ranking.html">順位</a></li>
+                    <li class="ham_menu_list"><a href="/html/form.html">結果申請</a></li>
+                </ul>
+            </nav>
+            <div class="mask"></div>
+        </div>
+        <div class="top">
+            <div class="img_box">
+                <img src="../img/bg_top_.PNG" alt="bg_top" class="bg_top">
+            </div>
+            <div class="team_list">
+                <ul>
+                    <li><img src="../img/petmark_giants.PNG" alt="giants"></li>
+                    <li><img src="../img/petmark_carp_1.PNG" alt="carp_1"></li>
+                    <li><img src="../img/petmark_carp_2.PNG" alt="carp_2"></li>
+                    <li><img src="../img/petmark_eagles.PNG" alt="eagles"></li>
+                    <li><img src="../img/petmark_swallows.PNG"alt="swallows"></li>
+                    <li><img src="../img/petmark_baystars.PNG" alt="baystars"></li>
+                </ul>
+                <ul>
+                    <li><img src="../img/petmark_fighters_1.PNG" alt="fighters_1"></li>
+                    <li><img src="../img/petmark_hawks.PNG" alt="hawks"></li>
+                    <li><img src="../img/petmark_dragons.PNG" alt="dragons"></li>
+                    <li><img src="../img/petmark_lions.PNG" alt="lions"></li>
+                    <li><img src="../img/petmark_marines.PNG" alt="marines"></li>
+                    <li><img src="../img/petmark_fighters_2.PNG" alt="fighters_2"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="ranking">
+                <div class="title_text_box">
+                    <h2 class="title_text">
+                        順位
+                    </h2>
+                </div>
+                <ul class="changejson">
+                    <li id="central-league">
+                        <p id="ce">セ・リーグ</p>
+                    </li>
+                    <li id="pacific-league">
+                        <p id="pa">パ・リーグ</p>
+                    </li>
+                </ul>
+                <div class="ranking_box_box">
+                    <div class="ranking_box">
+                        <ul class="standings-label">
+                            <li>試合</li>
+                            <li>勝利</li>
+                            <li>敗戦</li>
+                            <li>勝率</li>
+                            <li>勝差</li>
+                            <li>残試合</li>
+                            <li>防御率</li>
+                            <li>得点</li>
+                            <li>失点</li>
+                            <li>得失点</li>
+                            <li>本塁打</li>
+                        </ul>
+                        <div id="originalDataContainer" class="json-container">
+                            <ul id="originalDataList"></ul>
+                        </div>
+                        <div id="newDataContainer" class="json-container">
+                            <ul id="newDataList"></ul>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="leaguematch_info">
+                <h2>「EIKO-Cup LeagueMatch」とは</h2>
+                <p>
+                    「EIKO-Cup LeagueMatch」（通称：E-Cup）は、モバイルゲーム「プロ野球スピリッツA」を使用した、２ヶ月かけておこなう、「EIKO-Cup」の長期戦です。<br>
+                    プロ野球1球団のみの選手でオーダーを組んだ、12チーム（計11名）のプレイヤーがセ・リーグとパ・リーグのペナントレースを戦い抜き、栄光の頂点を目指します。
+                </p>
+                <img src="../img/leaguematch_info.PNG" alt="leaguematch_info" class="leaguematch_info_img">
+            </div>
+            <div class="schedule">
+                <h2>スケジュール</h2>
+                <div class="schedule_box">
+                    <div class="schedule_img_box">
+                        <ul>
+                            <li>
+                                <a href="./pennant_1.html">
+                                <img src="../img/schedule_pennant_1.PNG" alt="schedule">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./pennant_2.html">
+                                <img src="../img/schedule_pennant_2.PNG" alt="schedule">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./pennant_3.html">
+                                <img src="../img/schedule_pennant_3.PNG" alt="schedule">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./pennant_4.html">
+                                <img src="../img/schedule_pennant_4.PNG" alt="schedule">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./pennant_5.html">
+                                <img src="../img/schedule_pennant_5.PNG" alt="schedule">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./cs.html">
+                                <img src="../img/schedule_cs.PNG" alt="schedule">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./fs.html">
+                                <img src="../img/schedule_fs.PNG" alt="schedule">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="prosupia_ad_box">
+                <h2>使用タイトル</h2>
+                <div class="prosupia_ad">
+                    <img src="../img/bnr_prospi_a.jpg" alt="prospia_ad">
+                    <div class="prosupia_setumei">
+                        <p>
+                            EIKO-Cup LeagueMatchでは「プロ野球スピリッツA」を使用します。
+                        </p>
+                        <div class="l-top-website_btn">
+                            <p class="btn btn-next">
+                                <a href="https://www.konami.com/games/prospi_a/" class=" typesquare_option">公式サイト</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+    </main>
+  </div>
+  <footer>
+    <div class="footer_rogo_box">
+        <a href="./index.html">
+            <img src="../img/rogo_eikocup_1.PNG" alt="rogo_eikocup_1">
+        </a>
+    </div>
+    <div class="footer_nav">
+        <ul class="else_pennant">
+            <li>
+                <a href="./index.html">TOP</a>
+            </li>
+            <li>
+                <a href="./ranking.html">順位</a>
+            </li>
+            <li id="els_bottom_li">
+                <a href="./form.html">結果申請</a>
+            </li> 
+        </ul>
+        <h6>日程・結果</h6>
+        <ul class="penannt_ul">
+            <li>
+                <a href="./pennant_1.html">ペナントレース 開幕節</a>
+            </li>
+            <li>
+                <a href="./pennant_2.html">ペナントレース 第二節</a>
+            </li>
+            <li>
+                <a href="./pennant_3.html">ペナントレース 第三節</a>
+            </li>
+            <li>
+                <a href="./pennant_4.html">ペナントレース 第四節</a>
+            </li>
+            <li>
+                <a href="./pennant_5.html">ペナントレース 最終節</a>
+            </li>
+            <li>
+                <a href="./cs.html">クライマックスラウンド</a>
+            </li>
+            <li id="pen_bottom_li">
+                <a href="./fs.html">ファイナルラウンド</a>
+            </li>
+        </ul>
+    </div>
+    <div class="team_list team_list_foot">
+        <ul>
+            <li><img src="../img/petmark_giants.PNG" alt="giants"></li>
+            <li><img src="../img/petmark_carp_1.PNG" alt="carp_1"></li>
+            <li><img src="../img/petmark_carp_2.PNG" alt="carp_2"></li>
+            <li><img src="../img/petmark_eagles.PNG" alt="eagles"></li>
+            <li><img src="../img/petmark_swallows.PNG"alt="swallows"></li>
+            <li><img src="../img/petmark_baystars.PNG" alt="baystars"></li>
+        </ul>
+        <ul>
+            <li><img src="../img/petmark_fighters_1.PNG" alt="fighters_1"></li>
+            <li><img src="../img/petmark_hawks.PNG" alt="hawks"></li>
+            <li><img src="../img/petmark_dragons.PNG" alt="dragons"></li>
+            <li><img src="../img/petmark_lions.PNG" alt="lions"></li>
+            <li><img src="../img/petmark_marines.PNG" alt="marines"></li>
+            <li><img src="../img/petmark_fighters_2.PNG" alt="fighters_2"></li>
+        </ul>
+    </div>
+    <div class="l-footer_app_info">
+        <div class="app_info">
+            <div class="app_info_setumei">
+                <p>
+                    <a href="https://www.konami.com/games/prospi_a/"><img src="https://e-baseball-dl.konami.net/img/common/icon_pro_a.jpg?v6" alt="rogo" class="prospi_a_rogo"></a>
+                </p>
+                <ul>
+                    <li class="app_info_title">プロ野球スピリッツA</li>
+                    <li class="app_info-desc">リアルプロ野球ゲームの決定版がついに登場！<br>最高の映像クオリティでプロ野球の臨場感を再現！鍛え上げた最強のチームで日本一を目指そう！</li>
+                </ul>
+            </div>
+                <dd class="app_info-badge">
+                    <a href="http://itunes.apple.com/jp/app/puro-ye-qiusupirittsua/id940320341?ls=1&amp;mt=8" rel="noopener noreferrer" target="_blank" data-conversion-id="prospi_a_champ_ios_appstore" onclick="ga('send', 'event', 'app', 'download', 'prospi_a_champ_ios_appstore');"><img src="https://e-baseball-dl.konami.net/img/common/app-store-badge.svg" width="135" height="40" alt="App Store" loading="lazy"></a>
+                    <a href="https://play.google.com/store/apps/details?id=jp.konami.prospia" rel="noopener noreferrer" target="_blank" data-conversion-id="prospi_a_champ_android_googleplay" onclick="ga('send', 'event', 'app', 'download', 'prospi_a_champ_android_googleplay');"><img src="https://e-baseball-dl.konami.net/img/common/google-play-badge.svg" width="135" height="40" alt="Google Play" loading="lazy"></a>
+                    <a href="https://www.amazon.co.jp/dp/B072LZSKQG" rel="noopener noreferrer" target="_blank" data-conversion-id="prospi_a_champ_android_amazon" onclick="ga('send', 'event', 'app', 'download', 'prospi_a_champ_android_amazon');"><img src="https://e-baseball-dl.konami.net/img/common/amazon-appstore-badge.svg" width="116" height="40" alt="Amazon" loading="lazy"></a>
+                </dd>
+            </dl>
+        </div>
+        <div class="footer_rights-npb">
+            <p class="npb_rogo"><img src="https://e-baseball-dl.konami.net/img/prospi_a_league/logo-npb.png" width="55" height="47" alt="NPB"></p>
+            <div class="npb_setumei">
+                <p>一般社団法人日本野球機構承認</p>
+                <p>(公社)全国野球振興会公認</p>
+                <p>日本プロ野球名球会公認</p>
+                <p>Japan Baseball Data(株)</p>
+            </div>
+        </div>
+        <div class="footer_rights-notice">
+            <p>データはJapan Baseball Data(株)が独自に収集したものであり、<span class="bl">公式記録とは異なる場合があります。</span><br>
+                提供情報は手段を問わず、いかなる目的であれ無断で<span class="bl">複製、転送、販売等を行う事を固く禁じます。</span></p>
+        </div>
+    </div>
+  </footer>
+  <script src="../JS/nav.js"></script>
+  <script src="../JS/humbrger-menu.js"></script>
+  <script src="../JS/script.js"></script>
+</body>
+</html>
